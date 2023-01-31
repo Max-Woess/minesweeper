@@ -17,8 +17,8 @@ import javafx.stage.Stage;
 public class HelloApplication extends Application {
 
     private static final int tileSize = 40;
-    private static final int width = 600;
-    private static final int height = 600;
+    private static final int width = 320;
+    private static final int height = 320;
 
     private static final int xTiles = width / tileSize;
     private static final int yTiles = height / tileSize;
@@ -32,7 +32,7 @@ public class HelloApplication extends Application {
 
         for (int y = 0; y < yTiles; y++) {
             for (int x = 0; x < xTiles; x++) {
-                Tile tile = new Tile(x, y, Math.random() < 0.2);
+                Tile tile = new Tile(x, y, Math.random() < 0.1);
 
                 grid[x][y] = tile;
                 root.getChildren().add(tile);
